@@ -1,0 +1,369 @@
+<!Doctype html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+
+
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kite+One&display=swap" rel="stylesheet">
+  <style>
+
+  	.container-fluid{
+  		margin: 0px;
+  		padding: 0px;
+
+  	}
+  	.navbar{
+  		text-align: center;
+  		background-color: #35322d;
+  		opacity: 0.90;
+  		
+  		 }
+
+  	.card:hover .card-img-overlay{
+  		opacity: 0.95;
+  		background-color:#ffb03b;
+
+  	}
+  	.card:hover .card-img-top{
+  		opacity: 0.3;
+
+
+  	}
+  	.card-img-overlay {
+  		opacity: 0;
+  		transition:.5s ease;
+ 		text-align: center;
+
+ 		
+  	}
+  	.card-title{
+  		font-size: 2vw ;
+  		overflow: hidden;
+  		margin-bottom: 1px; 
+  		color: #35322d;
+  		padding-bottom: 5px;
+  		font-family: 'Courgette', cursive;
+  		word-spacing: 2px;
+  	}
+  	.card-text{
+  		font-size:1vw;
+  		overflow: hidden;
+  		color: #fff;
+  		font-family: 'Kite One', sans-serif;
+  		word-spacing: 2px;
+
+  	}
+   @media screen and (max-width:575px){
+   		.card-title{
+	  		font-size: 18px ;
+	  		
+	  	}
+	  	.card-text{
+	  		font-size:16px;
+	  		}
+  	}
+  
+  
+
+  #demo .carousel-container {
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #demo .carousel-content{
+  	text-align: center;
+  }
+  .carousel-content h1{
+  	font-family:'Courgette', cursive;
+  	color:#fff;
+  	font-weight: bold;
+  	font-size: 3vw;
+    }
+
+  .carousel-content p{
+  	font-weight: bold;
+  	font-family: 'Kite One', sans-serif;
+  	font-size: 2vw;
+  	color: #ffb03b;
+  	}
+
+  		
+  .navbar-nav a{
+  	color: #fff;
+  	font-family: 'Kite One', sans-serif;
+  	font-size: 15px;
+  }
+  .navbar-nav a:hover{
+  	color:#ffb03b;
+  }
+  .navbar .navbar-brand{
+  	letter-spacing: 2px;
+   	font-size: 25px;
+ 	font-family:'Courgette', cursive;
+  	color: #ffb03b;
+  }
+  .carousel-item{
+  	height: 100vh;
+  	min-height: 300px;
+  }
+  .w-100{
+  	height: 100vh;
+  }
+  @media screen and (max-width:575px){
+
+  			.navbar .container{
+				display:block;
+				text-align: center;
+				opacity: 0.5;
+			}
+		}
+
+  .cuisine-title{
+  	text-align: center;
+  	padding-top: 2%;
+  	font-family: 'Courgette', cursive;
+  	font-weight: bold;
+  	color: 	#ffb03b;
+
+
+  }
+  .jumbotron{
+  	text-align: center;
+  	margin: 0%;
+  	padding: 5%;
+  	background-color: #35322d;
+
+  }
+  .jumbotron p{
+  	text-family:;
+  	color: #fff;
+  	font-size: 14px;
+  	font-family: 'Kite One', sans-serif;
+  	letter-spacing: 2px;
+  	word-spacing: 2px;
+  }
+  .jumbotron h4{
+  	text-family:;
+  	color: #ffb03b ;
+  	font-size: 20px;
+  	font-family: 'Courgette', cursive;
+  	letter-spacing: 2px;
+  	word-spacing: 2px;
+  }
+
+  .jumbotron img:hover{
+  	transform:scale(1.1);
+  }
+
+
+
+
+  .contactimage{
+  	margin-top: 0%;
+  }
+  .animate__animated h4{
+  	color: #ffb03b;
+  	font-family: 'Courgette', cursive;
+  	letter-spacing: 2px;
+  	word-spacing: 2px;
+
+  }
+   .animate__animated p{
+  	color: #35322d;
+  	font-family: 'Kite One', sans-serif;
+  	letter-spacing: 2px;
+  	word-spacing: 2px;
+  }
+  .footer{
+  	background-color: #35322d;
+  	font-family: 'Kite One', sans-serif;
+  	word-spacing: 2px;
+  	letter-spacing: 2px;
+  }
+  </style>
+  
+
+
+</head>	
+
+	<nav class="navbar navbar-expand-md fixed-top">
+	  <a class="navbar-brand" href="#">Gujrati Zayka</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    <span><img src="./images/Menu1_25px.png" ></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#section1">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#section2">Items</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#section3">About Us</a>
+	      </li>  
+	      <li class="nav-item">
+	        <a class="nav-link" href="#section4">Contact Us</a>
+	      </li>    
+	    </ul>
+	  </div>  
+	</nav>
+	<body data-spy="scroll" data-target=".navbar" data-offset="0">
+	
+	
+		<div class="container-fluid" id="section1">
+				<div id="demo" class="carousel slide" data-ride="carousel" data-interval="4000">
+					<div class="carousel-inner" style="width: 100%">
+						
+						<div class="carousel-item active" style="background: url(./images/c5.jpg);background-position: center;">
+							<div class="carousel-container">
+								<div class="carousel-content">
+									<h1 class="animate__animated animate__fadeInDown">Welcome to Gujrati Zayka</h2>
+									<p class="animate__animated animate__fadeInUp">Kem 6o..Bhale Padharya</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" style="background: url(./images/c2.jpg);background-position: center;"></div>
+						<div class="carousel-item" style="background: url(./images/c3.jpg);background-position: center;"></div>
+						<div class="carousel-item" style="background: url(./images/c4.jpg);background-position: center;"> </div>
+					</div>
+					<a class="carousel-control-prev" href="#demo" role="button" data-slide="prev" style="opacity: 1;">
+   						 <span class="carousel-control-prev-icon" aria-hidden="true" style="opacity: 1;"></span>
+    					<span class="sr-only">Previous</span>
+  					</a>
+  					<a class="carousel-control-next" href="#demo" role="button" data-slide="next" style="opacity: 1;">
+   						 <span class="carousel-control-next-icon" aria-hidden="true" style="opacity: 1;"></span>
+   						 <span class="sr-only">Next</span>
+  					</a>
+				</div>
+		</div>
+		<div class="container-fluid pt-5 " id="section2">
+		<div style="background-color: #fff;">
+			<div class="cuisine-title " >
+				<h3>Our Cuisines</h3>
+			</div>
+			
+			<div class="card-columns mr-3 ml-3">
+				<div class="card">
+					<img src="./images/Dhokla.jpg" class="card-img-top ">
+					<div class="card-img-overlay">
+						<h4 class="card-title">Dhokla</h4>
+						 <p class="card-text" >A spongy dish made of fermented rice and chickpeas, Dhokla is best consumed with Green Chutney (made of coriander or mint) or Meethi Chutney (made of Dates and Tamarind). </p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./images/Fafda-Jalebi.jpg" class="card-img-top">
+					<div class="card-img-overlay">
+						<h4 class="card-title">Fafda-Jalebi</h4>
+						 <p class="card-text">Gujarati cuisine is filled with a variety of snacks and quick edible items. Fafda Jalebi is the tried and tested, and sweet and salty Gujarati food that is available at every street corner in Gujarat. </p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./images/Khandvi.jpg" class="card-img-top">
+					<div class="card-img-overlay">
+						<h4 class="card-title">Khandvi</h4>
+						 <p class="card-text">Soft, mushy, light and delightful. Khandvi is one of the most likable Gujarati breakfast recipes a person can have. Khandvi gives an irresistible sweet and salty taste with a batter that consists of gram flour, salt, and sugar.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./images/Handvo.jpg" class="card-img-top">
+					<div class="card-img-overlay">
+						<h4 class="card-title">Handvo</h4>
+						 <p class="card-text">Handvo is a sweet and savory cake that gives depth of flavors and creativity to Gujarati cuisine. The vegetable cake is made with a filling of bottle gourd, crushed peanuts, and sometimes an assortment of other vegetables added according to taste.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./images/Rotlo.jpg" class="card-img-top">
+					<div class="card-img-overlay">
+						<h4 class="card-title">Rotlo</h4>
+						 <p class="card-text">A staple food in the state of Gujarat, Rotlo is a flatbread made of bajra, jowar or nachni flour that is fast spreading to restaurants and hotels in other parts of India as well. </p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./images/Dal-Dhokli.jpg" class="card-img-top">
+					<div class="card-img-overlay">
+						<h4 class="card-title">Dal-Dhokli</h4>
+						 <p class="card-text">One of the signature Gujarati vegetarian recipes, Dal Dhokli is a dish made after boiling wheat flour noodles in pigeon pea stew. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid pt-5" id="section3">
+		<div class="jumbotron" >
+			<h4 class="animate__animated animate__fadeInLeft pb-3">ABOUT Gujrati Zayka</h4>
+			<p class="animate__animated animate__fadeInRight">
+Gujrati Zayka Group is an Indian Hospitality Brand hailing from the capital city of Rajasthan, Jaipur with 11 luxury properties situated across the nation and abroad. Gujrati Zayka  was conceptualised in the year 1990 with a notion to promote local heritage and culture that is indigenous to Rajasthan and India.
+
+The multinational diversified hospitality group operates and franchises an extensive ambit of hotels and luxury resorts, employing over 1400 people, in the Indian subcontinent and Europe. In a quest to represent and give a global platform to the native pastoral life, series of village themed restaurants came into existence and are functional across the Indian subcontinent as well as a luxury hotel with modish amenities and contemporary outlook is operational in London.<br>
+
+Gujrati Zayka group has ventured into numerous brands across different market segments including Gujrati Zayka Foods, Gujrati Zayka Resorts, Gujrati Zayka Ethnic Villages, Gujrati Zayka Palace Hotel, Kalagram, Chokha Punjab, Amusement Parks (Pink Pearl), Desert Camps and Safari. On the map, Gujrati Zayka has prominently made its presence in Jaipur, Jaisalmer, Indore, Chennai, Panchkula, Sonipat, and London.</p>
+		<div class="row pt-2">
+			<div class="col-lg-3 col-md-4">
+				<img src="./images/a1.jpg" class="img-fluid p-2">
+			</div>
+			<div class="col-lg-3 col-md-4">
+				<img src="./images/a2.jpg" class="img-fluid p-2">
+			</div>
+			<div class="col-lg-3 col-md-4">
+				<img src="./images/a3.jpg" class="img-fluid p-2">
+			</div>
+			<div class="col-lg-3 col-md-4">
+				<img src="./images/a4.jpg" class="img-fluid p-2">
+			</div>
+		</div>
+		</div>
+	</div>
+		<div class="container-fluid" id="section4">
+		<div class="contactimage" >
+		<img src="./images/contact-us.jpg" style="width: 100%;"></div>
+		<div class="row p-5  animate__animated animate__backInUp" style="text-align: center; width: 100%; ">
+			<div class="col-sm">
+				<img src="./images/Home_48px.png" >
+				<h4> Corporate Sales Office</h4>
+				<p> A-8 Shayam Nagar , Memnagar
+				 Ahmedabad-380024</p>
+			</div>
+			<div class="col-sm">
+				<img  src="./images/Phone_48px.png">
+				<h4>Call Us</h4>
+				<p>+91-141-516-60001</p>
+			</div>
+			<div class="col-sm">
+				<img  src="./images/gmail_52px.png" style="height: 50px; width: 50px;">
+				<h4>Email Us</h4>
+				<p>GujratiZayka@gmail.com</p>
+			</div>
+
+		</div>
+		</div>
+		</div>
+
+	<div class="footer p-3 text-white">
+				<p>Created By Dhwani Patel @2020</p>
+	</div>
+</body>
+	
+
+
+
+
+</html>
