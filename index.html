@@ -14,9 +14,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
-
-
-<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kite+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kite+One&display=swap" rel="stylesheet">
   <style>
 
   	.container-fluid{
@@ -24,13 +22,7 @@
   		padding: 0px;
 
   	}
-  	.navbar{
-  		text-align: center;
-  		background-color: #35322d;
-  		opacity: 0.90;
-  		
-  		 }
-
+  
   	.card:hover .card-img-overlay{
   		opacity: 0.95;
   		background-color:#ffb03b;
@@ -106,7 +98,12 @@
   	color: #ffb03b;
   	}
 
-  		
+  	.navbar{
+  	text-align: center;
+  	background-color: #35322d;
+  	opacity: 0.90;
+   	 }
+	
   .navbar-nav a{
   	color: #fff;
   	font-family: 'Kite One', sans-serif;
@@ -115,12 +112,16 @@
   .navbar-nav a:hover{
   	color:#ffb03b;
   }
+ 
   .navbar .navbar-brand{
   	letter-spacing: 2px;
    	font-size: 25px;
  	font-family:'Courgette', cursive;
   	color: #ffb03b;
   }
+  .nav-link.active {
+ 	 color: #ffb03b;
+	}
   .carousel-item{
   	height: 100vh;
   	min-height: 300px;
@@ -208,7 +209,9 @@
 
 </head>	
 
-	<nav class="navbar navbar-expand-lg fixed-top">
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		
+	<nav class="navbar navbar-expand-sm fixed-top">
 	  <a class="navbar-brand" href="#">Gujrati Zayka</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 	    <span><img src="./images/Menu1_25px.png" ></span>
@@ -230,10 +233,8 @@
 	    </ul>
 	  </div>  
 	</nav>
-	<body data-spy="scroll" data-target=".navbar" data-offset="0">
 	
-	
-		<div class="container-fluid " id="section1" >
+		<div id="section1" class="container-fluid " >
 				<div id="demo" class="carousel slide " data-ride="carousel" data-interval="4000"> 
 					<div class="carousel-inner" >
 						
@@ -259,7 +260,7 @@
   					</a>
 				</div>
 		</div>
-		<div class="container-fluid pt-5 " id="section2">
+		<div id="section2" class="container-fluid pt-5 " >
 		<div style="background-color: #fff;">
 			<div class="cuisine-title " >
 				<h3>Our Cuisines</h3>
@@ -311,7 +312,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid pt-5" id="section3">
+	<div id="section3" class="container-fluid pt-5" >
 		<div class="jumbotron" >
 			<h4 class="animate__animated animate__fadeInLeft pb-3">ABOUT Gujrati Zayka</h4>
 			<p class="animate__animated animate__fadeInRight">
@@ -336,7 +337,7 @@ Gujrati Zayka group has ventured into numerous brands across different market se
 		</div>
 		</div>
 	</div>
-		<div class="container-fluid" id="section4">
+		<div id="section4" class="container-fluid" >
 		<div class="contactimage" >
 		<img src="./images/contact-us.jpg" style="width: 100%;"></div>
 		<div style="justify-content: center;">
